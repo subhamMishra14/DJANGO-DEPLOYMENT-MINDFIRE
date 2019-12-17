@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form_page</title>
+  </head>
+  <body>
+    <div class="">
+      <h1>Here is your form page</h1>
+      <form class=""method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="submit" name="" value="submit">
+        </form>
+    </div>
+
+  </body>
+</html>
