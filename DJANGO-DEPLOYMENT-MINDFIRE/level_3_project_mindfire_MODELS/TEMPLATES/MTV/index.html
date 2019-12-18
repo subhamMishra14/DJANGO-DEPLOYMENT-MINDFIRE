@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mtv_view</title>
+  </head>
+  <body>
+    <h1>Here are records</h1>
+    {% if Data_webpage %}
+    <table>
+      {% for acc in Data_webpage %}
+      <tr>
+        <td>{{ acc.topic_name }}</td>
+        <td>{{ acc.webpage_name }}</td>
+        <td>{{ acc.url_name }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+      <p>NO RECORD FOUND</p>
+    {% endif %}
+
+  </body>
+</html>
